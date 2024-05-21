@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense-Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <h1>Expense Tracker Page</h1>
+    </header>
+    <main>
+        <div class="input-section">
+            <label for="category-section">
+                Category:
+            </label>
+            <select id="category-section">
+                <option value="Food & Bevrage">Food & Bevrage</option>
+                <option value="Stationary">Stationary</option>
+                <option value="Data-AddOn">Data-AddOn</option>
+                <option value="Travel">Travel</option>
+                <option value="Others">Others</option>
+            </select>
+            <label for="amount-input">
+                Amount:
+            </label>
+            <input type="number" id="amount-input">
+            <label for="date-input">Date:</label>
+            <input type="date" id="date-input">
+            <button id="add-btn">Add</button>
+        </div>
+        <div class="expense-list">
+            <h2>Expenses-List</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Amount</th>
+                        <th>Date</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="expences-table-body">
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Total</td>
+                        <td id="total-amount"></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
